@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saman Ramzan | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Header Section */
+        .hero {
+            background: rgba(255,255,255,0.95);
+            border-radius: 30px;
+            padding: 60px 40px;
+            margin: 30px 0;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            animation: fadeInDown 1s ease;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            color: #555;
+            margin: 15px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            margin: 10px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 40px;
+            transition: 0.3s;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        /* Cards Grid */
+        .section {
+            background: white;
+            border-radius: 30px;
+            padding: 40px;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            border-left: 5px solid #764ba2;
+            padding-left: 20px;
+            color: #333;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #f8f9ff;
+            border-radius: 20px;
+            padding: 20px;
+            transition: 0.3s;
+            border: 1px solid #e0e0ff;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .card i, .card-icon {
+            font-size: 2.5rem;
+            color: #764ba2;
+            margin-bottom: 15px;
+        }
+
+        .skills-badge {
+            display: inline-block;
+            background: #e0e0ff;
+            padding: 8px 16px;
+            margin: 5px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .cert-list, .exp-list {
+            list-style: none;
+        }
+
+        .cert-list li, .exp-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cert-list li i, .exp-list li i {
+            color: #764ba2;
+            width: 25px;
+        }
+
+        .logo-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .logo-item {
+            background: white;
+            border-radius: 15px;
+            padding: 15px 25px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            font-weight: bold;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background: #f8f9ff;
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .project-card a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #764ba2;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: white;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1>Saman Ramzan</h1>
+            <p><strong>Graphics Designer | Frontend Developer | Entrepreneur | Volunteer Leader</strong></p>
+            <p>Creative, detail-oriented, and passionate about design, leadership, and community impact.</p>
+            <a href="#contact" class="btn">Hire Me</a>
+            <a href="https://drive.google.com/file/d/1bg31fyK-aO8jAno1NOHf4u5FelNWm3iT/view?usp=drivesdk" target="_blank" class="btn">Graphics Portfolio</a>
+            <a href="https://www.linkedin.com/in/saman-ramzan-597a60354" target="_blank" class="btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+
+        <!-- Organizations & Societies -->
+        <div class="section">
+            <h2><i class="fas fa-users"></i> Organizations & Societies</h2>
+            <div class="logo-container">
+                <div class="logo-item"><i class="fas fa-building"></i> CBS (Character Building Society)</div>
+                <div class="logo-item"><i class="fas fa-user-graduate"></i> PMYDC - Head of Graphics</div>
+                <div class="logo-item"><i class="fas fa-lightbulb"></i> Creative Leadership Conference</div>
+                <div class="logo-item"><i class="fas fa-hand-holding-heart"></i> Volunteer Force Pakistan</div>
+                <div class="logo-item"><i class="fas fa-leaf"></i> Go Green Volunteers</div>
+                <div class="logo-item"><i class="fas fa-heartbeat"></i> Heal Pakistan</div>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="section">
+            <h2><i class="fas fa-code"></i> Skills</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <i class="fas fa-paintbrush"></i>
+                    <h3>Design & Creative</h3>
+                    <span class="skills-badge">Canva</span>
+                    <span class="skills-badge">Logo Designer</span>
+                    <span class="skills-badge">Figma (Basic UI)</span>
+                    <span class="skills-badge">Graphics Design</span>
+                </div>
+                <div class="card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Technical & Coding</h3>
+                    <span class="skills-badge">HTML/CSS</span>
+                    <span class="skills-badge">C/C++</span>
+                    <span class="skills-badge">Jupyter Notebook</span>
+                    <span class="skills-badge">Virtual Box</span>
+                    <span class="skills-badge">GUI Based Tools</span>
+                </div>
+                <div class="card">
+                    <i class="fas fa-chalkboard-user"></i>
+                    <h3>Leadership & Management</h3>
+                    <span class="skills-badge">Team Leadership</span>
+                    <span class="skills-badge">Executive Coordinator</span>
+                    <span class="skills-badge">Volunteer Affairs</span>
+                    <span class="skills-badge">Entrepreneurship</span>
+                    <span class="skills-badge">Tutoring & Mentoring</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <ul class="exp-list">
+                <li><i class="fas fa-university"></i> <strong>BSCS (2024–2028)</strong> – Fatima Jinnah Women University, Rawalpindi</li>
+                <li><i class="fas fa-chart-line"></i> <strong>Intermediate (ICS) – A Grade</strong> – APS Humayun (2021–2023)</li>
+                <li><i class="fas fa-star"></i> <strong>Matriculation (Science) – A+ Grade</strong> – FFS (2019–2021)</li>
+            </ul>
+        </div>
+
+        <!-- Courses & Certificates -->
+        <div class="section">
+            <h2><i class="fas fa-certificate"></i> Courses & Certificates</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>📚 Courses Completed</h3>
+                    <ul class="cert-list">
+                        <li><i class="fas fa-check-circle"></i> Web Development – CTTI Rawalpindi</li>
+                        <li><i class="fas fa-check-circle"></i> Quranic Studies (2 months online)</li>
+                        <li><i class="fas fa-check-circle"></i> SEO Content Writing – NextGen Digital Univ. (ongoing)</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>🏅 Key Certificates</h3>
+                    <ul class="cert-list">
+                        <li><i class="fas fa-award"></i> Web Development – KPK Board</li>
+                        <li><i class="fas fa-award"></i> Most Active Member – CBS</li>
+                        <li><i class="fas fa-award"></i> Chief Graphics Designer – CBS</li>
+                        <li><i class="fas fa-award"></i> Poster Design – Dukhtaran-e-Pakistan Seminar</li>
+                        <li><i class="fas fa-award"></i> Human Trafficking Awareness Campaign – PHEC directive</li>
+                        <li><i class="fas fa-award"></i> Mental Health Week Mela – CBS</li>
+                        <li><i class="fas fa-award"></i> Flood Relief Drive – Community Service</li>
+                        <li><i class="fas fa-award"></i> National Integrity Seminar Poster Design</li>
+                        <li><i class="fas fa-envelope"></i> Recommendation Letter – CLC & NextGen Digital</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="section">
+            <h2><i class="fas fa-briefcase"></i> Experience</h2>
+            <ul class="exp-list">
+                <li><i class="fas fa-pen-fancy"></i> <strong>Graphic Designer</strong> – FJWU under CBS (1 year)</li>
+                <li><i class="fas fa-crown"></i> <strong>Head of Graphic Designing Unit</strong> – PMYDC-FJWU</li>
+                <li><i class="fas fa-chalkboard"></i> <strong>Teaching Experience</strong> – Hussain Academy (1 year)</li>
+                <li><i class="fas fa-handshake"></i> <strong>Stakeholder & Creative Designer</strong> – CLC & VFP</li>
+                <li><i class="fas fa-users"></i> <strong>Core Team & Decision Making Team</strong> – CLC & VFP</li>
+                <li><i class="fas fa-chart-simple"></i> <strong>Chief of Graphics Designing Committee</strong> – CBS FJWU (Present)</li>
+                <li><i class="fas fa-seedling"></i> <strong>Volunteer</strong> – Heal Pakistan & Go Green Volunteers</li>
+            </ul>
+        </div>
+
+        <!-- Languages -->
+        <div class="section">
+            <h2><i class="fas fa-language"></i> Languages</h2>
+            <div class="logo-container">
+                <div class="logo-item">🇵🇰 Urdu (Native)</div>
+                <div class="logo-item">🇵🇰 Punjabi (Mother)</div>
+                <div class="logo-item">🇬🇧 English (Proficient)</div>
+            </div>
+        </div>
+
+        <!-- GitHub Projects -->
+        <div class="section">
+            <h2><i class="fab fa-github"></i> GitHub Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <i class="fas fa-map"></i>
+                    <h3>The River Journey Map</h3>
+                    <a href="https://github.com/samanramzan34/My-first-project-The-River-Journey-Map-" target="_blank">View Project →</a>
+                </div>
+                <div class="project-card">
+                    <i class="fas fa-trademark"></i>
+                    <h3>NASAW Logo Design</h3>
+                    <a href="https://github.com/samanramzan34/My-first-logo-design-for-organization-named-NASAW-" target="_blank">View Project →</a>
+                </div>
+                <div class="project-card">
+                    <i class="fas fa-hospital"></i>
+                    <h3>Hospital Management System</h3>
+                    <a href="https://github.com/samanramzan34/hospital-management-system/tree/main" target="_blank">View Project →</a>
+                </div>
+                <div class="project-card">
+                    <i class="fas fa-vote-yea"></i>
+                    <h3>Arduino Voting Machine</h3>
+                    <a href="https://github.com/samanramzan34/Simple-Arduino-Based-Voting-Machine" target="_blank">View Project →</a>
+                </div>
+                <div class="project-card">
+                    <i class="fas fa-hotel"></i>
+                    <h3>Hotel Management System</h3>
+                    <a href="https://github.com/samanramzan34/hotel-management-system" target="_blank">View Project →</a>
+                </div>
+                <div class="project-card">
+                    <i class="fas fa-edit"></i>
+                    <h3>GUI Text Editor</h3>
+                    <a href="https://github.com/samanramzan34/GUI-based-Text-Editor" target="_blank">View Project →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Freelance & Extra -->
+        <div class="section">
+            <h2><i class="fas fa-laptop"></i> Freelance Projects</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <i class="fas fa-cake-candles"></i>
+                    <h3>Blossom Bake Bouquet – Standee Design</h3>
+                    <p>Elegant bakery stall design with watercolor palette & gold typography.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="section" id="contact">
+            <h2><i class="fas fa-envelope"></i> Contact & Connect</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>samanramzan473@gmail.com</p>
+                    <a href="mailto:samanramzan473@gmail.com" class="btn">Send Email</a>
+                </div>
+                <div class="card">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/saman-ramzan-597a60354" target="_blank" class="btn">Connect with me</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2026 Saman Ramzan – Built with <i class="fas fa-heart"></i> | Graphics Designer & Developer</p>
+        </footer>
+    </div>
+</body>
+</html>
